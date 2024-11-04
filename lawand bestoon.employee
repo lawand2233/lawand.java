@@ -1,0 +1,44 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package lawandbestoon;
+import java.util.Scanner;
+
+public class Lawandbestoon {
+
+   public class EmployeeTest {
+
+public class Main {
+    
+    public void input() {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("firstname:");
+        String fname = scanner.nextLine();
+        
+        System.out.println("lastname:");
+        String lname = scanner.nextLine();
+        
+        System.out.println("monthly salary:");
+        double msalary = scanner.nextDouble();
+        
+        Employee employee = new Employee(fname, lname, msalary);
+        display(employee);
+        
+        scanner.close();
+    }
+    
+    public void display(Employee employee) {
+        employee.display1();
+        employee.display2();
+    }
+    
+    public static void main(String[] args) {
+        Main main = new Main();
+        main.input();
+    }
+}
+
+    
+}
